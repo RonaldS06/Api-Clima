@@ -54,7 +54,7 @@ h1 {
   transition: all 0.5s ease-in-out;
 }
 .search:hover {
-  box-shadow: 13px 5px 70px rgb(59, 59, 138);
+  box-shadow: 13px 5px 70px #2c4a6c;
 }
 
 .icon-search {
