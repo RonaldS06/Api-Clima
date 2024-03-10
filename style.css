@@ -10,7 +10,17 @@
 }
 
 body {
-  background: rgb(0, 0, 0);
+  background: #141e30; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #1a2d43,
+    #0a101a
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #1a2d43,
+    #0a101a
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .contenedorGral {
@@ -44,12 +54,12 @@ h1 {
   transition: all 0.5s ease-in-out;
 }
 .search:hover {
-  box-shadow: 13px 5px 70px rgb(85, 85, 190);
+  box-shadow: 13px 5px 70px rgb(59, 59, 138);
 }
 
 .icon-search {
   margin: 0;
-  background-color: rgb(41, 40, 40);
+  background-color: rgb(71 71 71);
   margin-top: 1.5px;
   padding: 4px 0px 4px 8px;
   border-radius: 20px 0 0 20px;
@@ -63,7 +73,7 @@ h1 {
 .search_input {
   border-radius: 0px 20px 20px 0;
   border: none;
-  background-color: rgb(41, 40, 40);
+  background-color: rgb(71 71 71);
   padding: 6px 15px 6px 7px;
   color: white;
   width: 300px;
@@ -97,7 +107,7 @@ button {
   transition: all 0.3s ease-in-out;
 }
 .img_clima:hover {
-  filter: drop-shadow(3px 5px 9px rgb(115, 115, 115));
+  filter: drop-shadow(3px 5px 9px rgb(168, 168, 168));
 }
 
 .tiempo_api,
