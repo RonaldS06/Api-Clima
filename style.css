@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  color: white;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(0, 0, 0);
+}
+
+.contenedorGral {
+  max-width: 850px;
+  margin: 0 auto;
+  height: 85vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+.title_search {
+  display: flex;
+  flex-direction: column;
+  gap: 0.51rem;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  margin: 0;
+
+  border-radius: 20px 20px 20px 20px;
+  width: fit-content;
+  transition: all 0.5s ease-in-out;
+}
+.search:hover {
+  box-shadow: 13px 5px 70px rgb(85, 85, 190);
+}
+
+.icon-search {
+  margin: 0;
+  background-color: rgb(41, 40, 40);
+  margin-top: 1.5px;
+  padding: 4px 0px 4px 8px;
+  border-radius: 20px 0 0 20px;
+  transition: color 0.3s ease-in-out;
+  color: rgb(147, 140, 140);
+}
+.search:hover .icon-search {
+  color: rgb(255, 255, 255);
+}
+
+.search_input {
+  border-radius: 0px 20px 20px 0;
+  border: none;
+  background-color: rgb(41, 40, 40);
+  padding: 6px 15px 6px 7px;
+  color: white;
+  width: 300px;
+}
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.search_input::placeholder {
+  color: rgb(155, 155, 155);
+}
+
+.search_input:focus {
+  outline: none;
+}
+
+.text_climate {
+  padding: 15px;
+  text-align: center;
+}
+
+.container_card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.img_clima {
+  width: 20%;
+  transition: all 0.3s ease-in-out;
+}
+.img_clima:hover {
+  filter: drop-shadow(3px 5px 9px rgb(115, 115, 115));
+}
+
+.tiempo_api,
+.info_api {
+  width: 290px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 1rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 15px 30px;
+}
+
+.info_api {
+  padding: 30px;
+  width: 200px;
+}
+.tiempo_api .nameCiudad {
+  font-weight: normal;
+  font-size: 30px;
+}
+
+.description_clima {
+  font-size: 15px;
+  font-weight: 500;
+  color: rgb(166, 166, 166);
+}
+.number_clima {
+  font-size: 40px;
+}
+.st_clima {
+  background-color: rgb(21, 19, 19);
+  padding: 3px 10px;
+  border-radius: 10px;
+}
+.location {
+  display: flex;
+  align-items: center;
+  gap: 0.1875rem;
+}
+
+footer {
+  text-align: center;
+  padding: 0 0 30px;
+}
+
+@media (width < 992px) {
+  .contenedorGral {
+    max-width: 650px;
+  }
+}
+
+@media (width < 768px) {
+  .contenedorGral {
+    max-width: fit-content;
+    padding: 10px 30px;
+    height: 90vh;
+  }
+  .container_card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .text_climate {
+    font-size: 15px;
+  }
+}
