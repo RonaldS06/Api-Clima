@@ -103,7 +103,7 @@ button {
   align-items: center;
 }
 .img_clima {
-  width: 20%;
+  width: 190px;
   transition: all 0.3s ease-in-out;
 }
 .img_clima:hover {
@@ -165,7 +165,7 @@ footer {
   .contenedorGral {
     max-width: fit-content;
     padding: 10px 30px;
-    height: 90vh;
+    height: 100vh;
   }
   .container_card {
     display: flex;
